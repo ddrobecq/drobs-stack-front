@@ -6,7 +6,7 @@ The stack includes :
  - Material UI Icons library
  - pwa-asset-generator
 
-## Getting Started
+# Getting Started
 Clone this repository
 Change the app name in package.json
 Set the dependencies :
@@ -23,18 +23,18 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Generate PWA asset
+# Generate PWA asset
 ```bash
 npx pwa-asset-generator ./icon.jpg ./pwa-asset -b "#00101a" -p "0%" -m ./pwa-asset/site.webmanifest -i ./pwa-asset/index.html -q 100 -f -w -d -x 
 ```
 
-## Learn More
-# Next.js
+# Learn More
+## Next.js
 To learn more about Next.js, take a look at the following resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/)
-# Material UI
+## Material UI
 To learn more about Material UI, take a look on https://mui.com/material-ui/
-# pwa-asset-generator
+## pwa-asset-generator
 To learn more about pwa-asset-generator, take a look on https://github.com/elegantapp/pwa-asset-generator/blob/master/README.md
