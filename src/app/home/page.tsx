@@ -14,7 +14,7 @@ export default function Home(): React.ReactNode {
         Your choice is saved in the local storage under the key <code>themeMode</code>
       </Typography>
       <Typography variant='h5'>
-        Get started to implement your web app by editing&nbsp;<code >app/page.tsx</code>
+        Get started to implement your web app by editing&nbsp;<code >app/home/page.tsx</code>
       </Typography>
     </Stack>
   );
