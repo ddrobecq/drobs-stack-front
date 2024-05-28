@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
-import { ThemeProvider } from '@mui/material/styles';
-import theme from '@/theme/theme';
+import ThemeModeContextProvider from '@/theme/theme-context';
+import Footer from "@/app/home/footer";
+import Header from "@/app/home/header";
+import { Stack } from "@mui/material";
 
 export const metadata: Metadata = {
   title: "Drobs stack Next web app",
@@ -13,9 +15,13 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
     <html lang="fr">
       <body >
         <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>
-            {children}
-          </ThemeProvider>
+          <ThemeModeContextProvider>
+            <Header />
+            <Stack margin={1} >
+              {children}
+            </Stack>
+            <Footer />
+          </ThemeModeContextProvider>
         </AppRouterCacheProvider>
       </body>
     </html>
