@@ -5,6 +5,7 @@ The stack includes :
  - Material UI
  - Material UI Icons library
  - pwa-asset-generator
+ - drobs-local-storage-react
 
 # Getting Started
 Clone this repository
@@ -38,3 +39,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 To learn more about Material UI, take a look on https://mui.com/material-ui/
 ## pwa-asset-generator
 To learn more about pwa-asset-generator, take a look on https://github.com/elegantapp/pwa-asset-generator/blob/master/README.md
+## drobs-local-storage-react
+To leanr more about drobs-local-storage-react, take a look on https://github.com/ddrobecq/drobs-local-storage-react
