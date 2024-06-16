@@ -62,7 +62,6 @@ const defaultComponents:Components = {
   MuiDialog: {
     defaultProps: {
       TransitionComponent: Transition,
-      variant: 'outlined',
       fullWidth: true,
       maxWidth: 'sm',
     },
