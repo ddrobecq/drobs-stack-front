@@ -1,8 +1,16 @@
 {
 "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-"packageRules": [
-    {
-        "matchUpdateTypes": ["major", "minor"]
-    }
-    ]
+"npm": {
+    "enabled": true,
+    "minimumReleaseAge": "3 days"
+},
+"extends": [
+    "config:js_app",
+    ":approveMajorUpdates"
+],
+"separateMinorPatch": true,
+"patch": {
+    "enabled": false
+},
+"updateLockFiles": false,
 }
