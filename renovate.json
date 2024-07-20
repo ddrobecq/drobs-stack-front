@@ -5,7 +5,7 @@
     "minimumReleaseAge": "3 days"
 },
 "extends": [
-    "config:js_app",
+    "config:js-app", 
     ":approveMajorUpdates"
 ],
 "separateMinorPatch": true,
