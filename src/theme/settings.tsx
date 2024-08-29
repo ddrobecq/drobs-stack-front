@@ -1,5 +1,5 @@
 'use client';
-
+import React from 'react';
 import { Stack, Typography } from "@mui/material";
 import { useContext } from "react";
 import ToggleButton from '@mui/material/ToggleButton';
@@ -11,10 +11,11 @@ import ContrastIcon from '@mui/icons-material/Contrast';
 import { ThemeModeContext, ThemeModeType, _DEFAULT_THEME_MODE, _STORAGE_KEY_THEME_MODE } from "@/theme/theme-context";
 
 export default function SettingsTheme () {
-    const [defaultMode, setDefaultMode] = useLocalStorage(_STORAGE_KEY_THEME_MODE, _DEFAULT_THEME_MODE);
+    const [, setDefaultMode] = useLocalStorage(_STORAGE_KEY_THEME_MODE, _DEFAULT_THEME_MODE);
     const {mode, setMode} = useContext(ThemeModeContext);
 
     function handleChangeMode(e:React.MouseEvent<HTMLElement, MouseEvent>, value:ThemeModeType):void {
+        e.preventDefault();
         setMode (value);
         setDefaultMode (value);
     }

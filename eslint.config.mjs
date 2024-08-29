@@ -17,7 +17,7 @@ export default [
   pluginReact.configs.flat.recommended,
   {
     rules:{
-      "no-unused-vars": "warn"
+      "no-unused-vars": "warn",
     }
   },
 ];

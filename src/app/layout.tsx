@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import React from "react";
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import ThemeModeContextProvider from '@/theme/theme-context';
 import Footer from "@/app/home/footer";

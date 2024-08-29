@@ -1,5 +1,5 @@
 'use client';
-
+import React from 'react';
 import { Stack, Typography } from "@mui/material";
 import SettingsTheme from "@/theme/settings";
 

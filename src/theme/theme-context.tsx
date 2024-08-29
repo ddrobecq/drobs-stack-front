@@ -1,5 +1,5 @@
 'use client';
-
+import React from 'react';
 import { createContext, useEffect, useState } from "react";
 import useLocalStorage from "drobs-local-storage-react";
 import { ThemeProvider } from "@emotion/react";
@@ -16,13 +16,12 @@ export const _STORAGE_KEY_THEME_MODE:string = 'themeMode';
 export const ThemeModeContext = createContext<ThemeModeContextType>({mode: _DEFAULT_THEME_MODE, setMode: () => {}});
 
 export default function ThemeModeContextProvider({children,}: Readonly<{children: React.ReactNode;}>) {
-    const [ defaultMode, setDefaultMode ] = useLocalStorage(_STORAGE_KEY_THEME_MODE as ThemeModeType, _DEFAULT_THEME_MODE);
+    const [ defaultMode,  ] = useLocalStorage(_STORAGE_KEY_THEME_MODE as ThemeModeType, _DEFAULT_THEME_MODE);
     const [mode, setMode] = useState<ThemeModeType>(_DEFAULT_THEME_MODE);
     const [currentTheme, setCurrentTheme] = useState(darkTheme);
 
     useEffect(() => {
         setMode(defaultMode as ThemeModeType);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[]);
 
     useEffect(() => {

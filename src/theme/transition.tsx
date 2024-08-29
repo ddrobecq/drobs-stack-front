@@ -1,8 +1,9 @@
+import React from "react";
 import { forwardRef } from "react";
 
-const { Slide } = require("@mui/material");
+import { Slide, SlideProps } from '@mui/material';
 
-const Transition = forwardRef(function Transition(props, ref) {
+const Transition = forwardRef(function Transition(props:SlideProps, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
 });
 
