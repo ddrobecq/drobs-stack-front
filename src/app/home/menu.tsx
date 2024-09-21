@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import HomeIcon from '@mui/icons-material/Home';
-import { useTheme } from '@emotion/react';
+import { useTheme } from '@mui/material/styles';
 
 export default function Menu () {
 	const router = useRouter();
