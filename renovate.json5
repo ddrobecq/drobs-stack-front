@@ -6,7 +6,8 @@
 },
 "extends": [
     "config:js-app", 
-    ":approveMajorUpdates"
+    ":approveMajorUpdates",
+    ":preserveSemverRanges"
 ],
 "separateMinorPatch": true,
 "patch": {
