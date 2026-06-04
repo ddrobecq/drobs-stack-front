@@ -29,7 +29,7 @@
     "eslint-plugin-react": "7.37.4",
     "globals": "15.15.0",
     "typescript": "5.8.2",
-    "typescript-eslint": "8.27.0"
+    "typescript-eslint": "8.60.1"
   },
   "keywords": [
     "web app stack",
